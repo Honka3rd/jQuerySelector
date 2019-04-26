@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Selectors</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+        <link rel="stylesheet" href='./jQSelector.css'>
+    </head>
+    <body>
+        <h1 class="lecture">Selectors</h1>
+        <div class="lecture">
+            <h3>Hide by class</h3>
+            <p class='hideable'>This paragraph will be hidden</p>
+            <button class="ui primary button" id='lecture-1'>Hide it</button>
+            <button class="ui primary button" id='lecture-1-show'>show it</button>
+        </div>
+        <div class="lecture">
+            <h3>Select all</h3>
+            <button class="ui primary button" id='lecture-2'>hide all</button>
+        </div>
+        <div class="lecture">
+            <h3>Select current element</h3>
+            <button class='ui primary button' id='lecture-3'>hide myself</button>
+        </div>
+        <div class="lecture">
+            <h3>Cascading select</h3>
+            <p class="hide_p">paragraph with hide_p class will be hidden only</p>
+            <p class="hide_p">paragraph with hide_p class will be hidden only</p>
+            <button class='ui primary button' id="lecture-4">hide p by class</button>
+            <button class='ui primary button' id="lecture-4-show">show p by class</button>
+        </div>
+        <div class="lecture">
+            <h3>Select first</h3>
+            <p class="hide_first">The first will be hidden</p>
+            <p class="hide_first">The second never be hidden</p>
+            <button class='ui primary button' id="lecture-5">hide first</button>
+        </div>
+    </body>
+    <script src="./jQSelector.js"></script>
+</html>
